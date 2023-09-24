@@ -1,3 +1,7 @@
+<script>
+	import Loader from '../components/Loader.svelte';
+</script>
+
 <div class="w-full h-full flex">
 	<div class="flex flex-col py-5 px-10 w-1/6 h-full shadow-lg border-r border-gray-200">
 		<h1 class="text-2xl font-bold flex items-center justify-between">
@@ -116,7 +120,11 @@
 		<div
 			class="pl-10 h-28 border-b border-gray-200 bg-white flex items-center justify-between shrink-0"
 		>
-			<h2 class="text-lg">Course Session: <span class="font-bold">#243F9KGD</span></h2>
+			<h2 class="text-lg relative">
+				Course Session: <span class="font-bold">#243F9KGD</span>
+				<div class="absolute -right-5 top-2 w-3 h-3 rounded-full bg-green-400 animate-pulse" />
+			</h2>
+
 			<div class="flex justify-end items-center gap-10 px-10">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -195,9 +203,12 @@
 
 		<div class="flex-1 bg-gray-100 flex">
 			<div class="flex-1 p-10 flex">
-				<div class="bg-white p-5 flex">
+				<div class="bg-white p-10 flex rounded-lg">
 					<div class="w-[60%] shrink-0">
-						<h2 class="text-2xl border-b pb-3">
+						<div class="h-[300px] rounded-lg border bg-gray-100 flex items-center justify-center">
+							<Loader />
+						</div>
+						<h2 class="text-2xl border-b pb-3 mt-5">
 							Title: <span class="font-medium">Code with a cup of <s>coffee</s></span>
 						</h2>
 						<p class="text-sm mt-2">
@@ -226,6 +237,10 @@
 							</svg>
 						</p>
 						<img src="/qr-code.svg" alt="qr" class="w-full h-[300px] aspect-video object-contain" />
+						<div class="flex flex-col items-center gap-3">
+							<p>Session starts at:</p>
+							<p class="text-5xl text-blue-500">00:49:59s</p>
+						</div>
 					</div>
 				</div>
 			</div>
