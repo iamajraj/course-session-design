@@ -1,4 +1,5 @@
 <script>
+	import Countdown from './Countdown.svelte';
 	import Loader from './Loader.svelte';
 </script>
 
@@ -41,7 +42,7 @@
 			<img src="/qr-code.svg" alt="qr" class="w-full h-[300px] aspect-video object-contain" />
 			<div class="flex flex-col items-center gap-3">
 				<p>Session starts at:</p>
-				<p class="text-5xl text-blue-500 mb-5">00:49:59s</p>
+				<Countdown />
 			</div>
 		</div>
 	</div>
