@@ -1,12 +1,15 @@
 <div
-	class="pl-10 h-28 border-b border-gray-200 bg-white flex items-center justify-between shrink-0"
+	class="px-4 md:pl-10 h-20 md:h-28 border-b border-gray-200 bg-white flex items-center justify-between shrink-0"
 >
-	<h2 class="text-lg relative">
-		Course Session: <span class="font-bold">#243F9KGD</span>
-		<div class="absolute -right-5 top-2 w-3 h-3 rounded-full bg-green-400 animate-pulse" />
+	<h2 class="text-sm md:text-lg relative">
+		<p class="md:hidden text-lg font-medium">SESSiON</p>
+		Course Session:<span class="font-bold">#243F9KGD</span>
+		<div
+			class="absolute w-3 h-3 rounded-full bg-green-400 animate-pulse -right-5 top-6 md:-right-5 md:top-2"
+		/>
 	</h2>
 
-	<div class="flex justify-end items-center gap-10 px-10">
+	<div class="hidden md:flex justify-end items-center gap-10 px-10">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
@@ -80,4 +83,18 @@
 			/>
 		</svg>
 	</div>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		fill="none"
+		viewBox="0 0 24 24"
+		stroke-width="1.5"
+		stroke="currentColor"
+		class="w-6 h-6 md:hidden"
+	>
+		<path
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+		/>
+	</svg>
 </div>

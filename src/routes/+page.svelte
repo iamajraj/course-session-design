@@ -9,9 +9,11 @@
 	<Sidebar />
 	<div class="flex-1 flex flex-col">
 		<Navbar />
-		<div class="flex-1 bg-gray-100 flex">
+		<div class="flex-1 bg-gray-100 flex md:flex-row flex-col pb-10 md:pb-0">
 			<Content />
-			<StudentsList />
+			<div class="w-1/4 hidden md:block">
+				<StudentsList />
+			</div>
 		</div>
 	</div>
 </div>
